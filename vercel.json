@@ -1,24 +1,32 @@
 {
-  "version": 2,
-  "public": true,
-  "builds": [
-    {
-      "src": "flower.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "css/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "js/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/flower.html"
-    }
-  ]
-}
+    "version": 2,
+    "public": true,
+    "builds": [
+      {
+        "src": "flower.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "css/**",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "js/**",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "img/**",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "sound/**",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/flower.html"
+      }
+    ]
+  }
